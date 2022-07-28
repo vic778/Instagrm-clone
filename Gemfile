@@ -45,24 +45,24 @@ gem 'simple_form', '~> 5.0'
 # gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
+gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 
 # Reduces boot times through caching; required in config/boot.rb
- gem "bootsnap", require: false
+gem "bootsnap", require: false
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails', '~> 4.4'
 # gem 'sass-rails'
 # gem 'material_icons'
 
 # Use Sass to process CSS
- gem "sassc-rails"
+gem "sassc-rails"
 
 gem 'activeadmin'
+gem "algoliasearch-rails"
 gem 'carrierwave'
 gem 'devise'
 gem 'omniauth-google-oauth2'
 gem "pundit"
-gem "algoliasearch-rails"
 
 # gem 'cssbundling-rails'
 # gem 'bootstrap','~>5.1.3'
@@ -74,14 +74,14 @@ gem 'uglifier'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'better_errors'
+  gem "debug", platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails'
   gem 'faker'
+  gem 'pry-rails'
   gem 'rspec-rails'
   gem 'rubocop'
   gem 'shoulda-matchers'
-  gem 'pry-rails'
-  gem 'better_errors'
 end
 
 group :development do
@@ -101,8 +101,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
-
-
-
 
 gem 'responders'
